@@ -11,9 +11,9 @@ type Status = { state: "idle" | "sending" | "success" | "error"; message?: strin
 
 const contacts = [
   { label: "Email", value: site.email, href: `mailto:${site.email}`, Icon: Mail },
-  { label: "GitHub", value: "Bassem-star", href: links.github, Icon: Github },
+  { label: "GitHub", value: "Bassem-magdy", href: links.github, Icon: Github },
   { label: "LinkedIn", value: "Connect with me", href: links.linkedin, Icon: Linkedin },
-  { label: "Codeforces", value: "Hero_777", href: links.codeforces, Icon: Trophy },
+  { label: "Codeforces", value: "bassem_magdy", href: links.codeforces, Icon: Trophy },
 ];
 
 const field =
