@@ -8,9 +8,9 @@ export const site = {
 
 export const links = {
   github: "https://github.com/Bassem-Magdy",
-  linkedin: "https://www.linkedin.com/in/bassem-magdy", // أضف رابط حسابك على LinkedIn هنا
+  linkedin: "www.linkedin.com/in/bassem-magdy-094952340", // أضف رابط حسابك على LinkedIn هنا
   codeforces: "https://codeforces.com/profile/bassem_magdy",
-  email: "mailto:your-email@example.com", // أضف بريدك الإلكتروني هنا
+  email: "bassemmagdy113@gmail.com", // أضف بريدك الإلكتروني هنا
 };
 
 export const stats = [
