@@ -1,7 +1,6 @@
 /**
  * SINGLE SOURCE OF TRUTH
  * Edit content and links here; every component reads from this file.
- * Items marked TODO are placeholders that need your real URLs/files.
  */
 
 export const site = {
@@ -14,14 +13,14 @@ export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://bassem-magdy.github.io/Bassem-Portfolio/",
   location: "Beni Suef, Egypt",
   status: "Available for work & freelance",
-  email: "bassemmagdy113@gmail.com", // TODO: put your real email
+  email: "bassem.magdy.dev@gmail.com", // أضف بريدك الإلكتروني هنا
   education: "CS Undergraduate, Faculty of Computers & AI (FCAI), Beni Suef University",
 } as const;
 
 export const links = {
   github: "https://github.com/Bassem-Magdy",
-  linkedin: "www.linkedin.com/in/bassem-magdy-094952340", // TODO: put your real LinkedIn URL
-  resume: "/Bassem-Magdy-Resume.pdf", // TODO: put your PDF in /public with this name
+  linkedin: "https://www.linkedin.com/in/bassem-magdy", // أضف رابط LinkedIn الخاص بك هنا
+  resume: "/Bassem-Magdy-Resume.pdf", 
   codeforces: "https://codeforces.com/profile/bassem_magdy",
   codechef: "https://www.codechef.com/users/bassem_magdy",
   atcoder: "https://atcoder.jp/users/bassem_magdy",
@@ -149,39 +148,28 @@ export type Project = {
   category: ProjectCategory;
   description: string;
   tech: string[];
-  /** Leave undefined to hide the button. Code falls back to the GitHub profile. */
   demo?: string;
   code?: string;
 };
 export const projects: Project[] = [
   {
-    slug: "gradbox",
-    title: "GradBox",
+    slug: "cafe-shop",
+    title: "Cafe Shop Platform",
     category: "Web",
     description:
-      "An academic showcase platform that presents approved university graduation projects to faculty members and potential employers.",
-    tech: ["ASP.NET Core API", "Entity Framework Core", "React.js / Next.js", "Tailwind CSS"],
-    demo: undefined, // TODO: live URL
-    code: undefined, // TODO: repo URL (falls back to your GitHub profile)
+      "A modern interactive web application for browsing cafe menus, ordering coffee items, and exploring custom beverage selections with a smooth responsive user interface.",
+    tech: ["JavaScript", "HTML5", "CSS3", "Responsive Web Design"],
+    demo: "https://bassem-magdy.github.io/CafeShop_project/",
+    code: "https://github.com/Bassem-Magdy/CafeShop_project",
   },
   {
-    slug: "maze-solver",
-    title: "Autonomous Maze-Solving Simulator",
-    category: "Algorithms",
+    slug: "ember-oak",
+    title: "Ember & Oak Restaurant",
+    category: "Web",
     description:
-      "A Python-based robot simulator that runs graph search algorithms to navigate complex mazes autonomously.",
-    tech: ["Python", "Algorithms", "Graph Theory"],
-    demo: undefined,
-    code: undefined, // TODO: repo URL
-  },
-  {
-    slug: "icpc-bsu-branding",
-    title: "ICPC BSU Branding & UI Designs",
-    category: "Design",
-    description:
-      "Visual branding, promotional media, and posters created for ICPC Beni Suef University training events.",
-    tech: ["Figma", "Canva", "Branding"],
-    demo: undefined, // TODO: Behance / Drive link
-    code: undefined,
+      "An elegant restaurant website platform featuring sophisticated UI components, online reservation showcases, and dynamic food menu layouts.",
+    tech: ["JavaScript", "HTML5", "CSS3", "UI/UX Design"],
+    demo: "https://bassem-magdy.github.io/-Ember-Oak/",
+    code: "https://github.com/Bassem-Magdy/-Ember-Oak",
   },
 ];
